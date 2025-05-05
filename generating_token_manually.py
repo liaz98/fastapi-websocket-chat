@@ -8,4 +8,5 @@ data = {
     "exp": datetime.utcnow() + timedelta(hours=1)
 }
 token = jwt.encode(data, SECRET_KEY, algorithm=ALGORITHM)
+
 print(token)
